@@ -10,8 +10,8 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            LargeNumber large = new LargeNumber();
-            large.Biggest();
+            PrimeFactor prime = new PrimeFactor();
+            prime.Factor();
             Console.ReadKey();
 
         }

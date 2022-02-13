@@ -6,24 +6,40 @@ using System.Threading.Tasks;
 
 namespace Basic_Core_Program
 {
-    public class LargeNumber
+    public class PrimeFactor
     {
-        public void Biggest()
+        public void Factor()
         {
-            int a = 70;
-            int b = 290;
-            int c = 125;
+            int num = 24;
+            int i, j;
+            int count = 0;
+            int flag = 0;
 
-            Console.WriteLine("The numbers is  a = {0}, b = {1}, c = {2}", a, b, c);
-            if ((a > b) && (a > c))
-                Console.WriteLine("a = {0} is the biggest number", a);
+            Console.Write("Prime factor of {0}:\n", num);
+            for (i = 2; i < num; i++)
+            {
+                // check for divisibility
+                if (num % i == 0)
+                {
+                    count = 0;
+                    // check for prime number
+                    for (j = 1; j <= i; j++)
+                    {
+                        if (i % j == 0)
+                            count++;
+                    }
+                    if (count == 2)
+                    {
+                        flag = 1;
+                        Console.Write(i + " ");
+                    }
+                }
+            }
 
-            if (b > c)
-                Console.WriteLine("b = {0} is the biggest number", b);
+            if (flag == 0)
 
-            else
-                Console.WriteLine("c = {0} is the biggest number", c);
-            Console.ReadLine();
+                Console.Write("There is no Prime factor for {0} ", num);
+
         }
     }
 }
