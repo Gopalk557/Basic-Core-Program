@@ -10,8 +10,7 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            SwapNumber number = new SwapNumber();
-            number.Swap();
+            EvenOdd.EvenOddNum();
             Console.ReadKey();
 
         }

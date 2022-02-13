@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace Basic_Core_Program
 {
-    internal class SwapNumber
+    public class EvenOdd
     {
-        public void Swap()
+        public static void EvenOddNum()
         {
-            int i = 10;
-            int j = 20;
-            i = i + j;
-            j = i - j;
-            i = i - j;
+            Console.WriteLine("Enter the Number ");
+            int Num = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("i = " + i);
-            Console.WriteLine("j = " + j);
-
+            if (Num % 2 == 0)
+            {
+                Console.WriteLine("Even number \n", Num);
+            }
+            else
+            {
+                Console.WriteLine("Odd Number \n ", Num);
+            }
         }
     }
 }
