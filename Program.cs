@@ -10,7 +10,8 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            EvenOdd.EvenOddNum();
+            LargeNumber large = new LargeNumber();
+            large.Biggest();
             Console.ReadKey();
 
         }

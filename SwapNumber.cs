@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace Basic_Core_Program
 {
-    public class EvenOdd
+    public class LargeNumber
     {
-        public static void EvenOddNum()
+        public void Biggest()
         {
-            Console.WriteLine("Enter the Number ");
-            int Num = Convert.ToInt32(Console.ReadLine());
+            int a = 70;
+            int b = 290;
+            int c = 125;
 
-            if (Num % 2 == 0)
-            {
-                Console.WriteLine("Even number \n", Num);
-            }
+            Console.WriteLine("The numbers is  a = {0}, b = {1}, c = {2}", a, b, c);
+            if ((a > b) && (a > c))
+                Console.WriteLine("a = {0} is the biggest number", a);
+
+            if (b > c)
+                Console.WriteLine("b = {0} is the biggest number", b);
+
             else
-            {
-                Console.WriteLine("Odd Number \n ", Num);
-            }
+                Console.WriteLine("c = {0} is the biggest number", c);
+            Console.ReadLine();
         }
     }
 }
