@@ -10,8 +10,8 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            PrimeFactor prime = new PrimeFactor();
-            prime.Factor();
+            PowerOfTwo powerOf = new PowerOfTwo();
+            powerOf.CheckPower();
             Console.ReadKey();
 
         }
