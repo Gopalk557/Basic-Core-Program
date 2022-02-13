@@ -10,8 +10,10 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Basic Core Program");
+            SwapNumber number = new SwapNumber();
+            number.Swap();
             Console.ReadKey();
+
         }
     }
 }
