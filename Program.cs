@@ -10,19 +10,9 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Enter 1. to  print String Replace \n");
-            bool flag = true;
-            while (flag)
-            {
-                int check = Convert.ToInt32(Console.ReadLine());
-                switch (check)
-                {
-                    case 1:
-                        StringReplace sr = new StringReplace();
-                        sr.Replace("Gopal");
-                        break;
-                }
-            }
+            VowelAndConsonent vowel = new VowelAndConsonent();
+            vowel.Alphabet();
+            Console.ReadKey();
 
         }
     }
